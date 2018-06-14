@@ -1,0 +1,250 @@
+/*!
+Theme Name: Spring Plants
+Author: Laurence Juden
+Author URI: http://laurencejuden.com
+Version: 1.0.0
+Text Domain: spring-plants
+*/
+
+/**
+* 	Headings
+*/
+h1, h2 {
+	color: #586326 !important;
+}
+
+h4, h5 {
+	color: #7F8E35 !important;
+}
+
+footer h5 {
+	color: white !important;
+}
+
+/**
+*	Anchors
+*/
+.blog-categories-list a {
+	font-weight: bold;
+	color: #373A3C !important;
+}
+
+a:hover {
+	color: #bbbbbb !important;
+}
+
+/**
+* 	Post previews
+*/
+.post-preview-list {
+	padding-left: 15px;
+}
+
+.post-preview {
+	margin-bottom: 20px;
+}
+
+.post-preview-list hr {
+	border-style: solid !important;
+	border-width: 1px !important;
+	border-color: #ACC14E !important;
+}
+
+/**
+* 	Navbar
+*/
+.navbar {
+	opacity: 1;
+	overflow: visible !important;
+}
+
+/**
+*	Main header
+*/
+.main-header {
+	z-index: 10000;
+	height: 20vh;
+	width: 100%;
+	background-image: url(./img/front-page-header.jpg);
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+  	background-position: center;
+ 	text-align: center;
+}
+
+/**
+*	Front page header
+*/
+.front-page-header {
+	z-index: 10000;
+	height: 100vh;
+	width: 100%;
+	background-image: url(./img/front-page-header.jpg);
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+  	background-position: center;
+ 	text-align: center;
+}
+
+.front-page-header-inner {
+	padding: 20px;
+	margin-top: 30vh; 
+	background-color: rgba(255, 255, 255, 0.849);
+	border-radius: 6px;
+}
+
+.header-logo {
+	width: 50%;
+}
+
+/**
+*	Sidebar
+*/
+.blog-page-sidebar-wrapper {
+	margin-top: 80px;
+}
+.blog-categories {
+	margin-top: 20px;
+}
+
+.spring-bulbs-ad {
+	margin-top: 20px;
+	padding: 15px;
+}
+
+.sidebar-mailing-list-form {
+	margin-top: 20px;
+}
+
+.blog-categories-list {
+	list-style: none;
+}
+
+
+.services-listing {
+	margin: 80px 0px;
+}
+
+hr {
+	border-style: solid !important;
+	border-width: 1px !important;
+	border-color: #7F8E35 !important;
+}
+
+/**
+* Front Page
+*/
+.service-button {
+	margin-bottom: 20px;
+}
+
+/* Prevent empty space from appearing beneath footer when page doesn't have much content. */
+main {
+	min-height: 500px;
+}
+
+/**
+*	Footer
+*/
+footer {
+	margin-top: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	background-color: #707749;
+}
+footer .nav-link {
+	color: white;
+}
+
+/**
+*	About page
+*/
+.about-image {
+	margin-bottom: 20px;
+}
+
+/**
+* 	Woocommerce overrides
+*/
+.woocommerce-Input, .input-text, .orderby {
+	border-style: solid;
+	border-radius: 4px;
+	height: 40px;
+}
+
+.select2-selection {
+	height: 40px !important;
+}
+
+#coupon_code {
+	width: auto !important;
+}
+
+/**
+*	Prevent Woocommerce column classes from clashing with
+*	Bootstrap's grid system.
+*/
+.woocommerce .col-1, .woocommerce .col-2	{
+	max-width:none;
+
+}
+
+/**
+*	MEDIA QUERIES
+*/
+
+@media (min-width: 960px) {
+	footer ul {
+		display: inline-block !important;
+		list-style-type: none;
+		padding-left: 0px;
+		width: 180px;
+		color: white; }
+		footer li {
+			display: inline;
+		}
+	  footer li:nth-child(odd) {
+		width: 80px;
+		float: left;
+		margin-right: 10px; }
+	  footer li:nth-child(even) {
+		width: 80px;
+		text-align: left;
+		float: right; }
+
+		
+}
+
+@media (max-width: 969px) {
+	.front-page-header, .main-header {
+		height: 20vh;
+
+	}
+	.front-page-header-inner {
+		display: none;
+	}
+	footer {
+		text-align: center;
+	}
+
+	.footer-contact {
+		margin-top: 20px;
+	}
+
+	h1, h2, h3, h4, h5 {
+		text-align: center;
+	}
+
+	.post-preview {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	aside {
+		text-align: center;
+	}
+}
